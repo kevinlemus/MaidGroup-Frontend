@@ -1,0 +1,57 @@
+  .invoice-title span {
+    margin-left: 10px; /* adjust as needed */
+    font-size: 14px; /* adjust as needed */
+  }
+
+  .invoice-title {
+    align-items: center;
+    margin-left: 0px;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+
+ .example-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color:rgb(255, 255, 255);
+    color: black;
+ }
+
+ .id-span{
+    margin-top: 5px;
+ }
+
+ .services-button.hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+ .mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+ }
+
+ .invoice-date {
+    color: black;
+ }
+
+  button{
+    align-items: right;
+    color: rgb(0, 0, 0);
+    background-color: white;
+ }
+  
+ button:hover{
+    align-items: right;
+    color: rgb(0, 0, 0);
+    background-color: rgb(194, 194, 194);
+ }
+ .service-text {
+    color: black;
+    text-align: center;    
+  }
+  

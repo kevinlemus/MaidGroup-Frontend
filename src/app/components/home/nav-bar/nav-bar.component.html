@@ -1,0 +1,40 @@
+<div class="navbar-container">
+    <img src="https://maidgroup-bucket.s3.amazonaws.com/MaidGroup-Logo-Final-sin-fondo.png" style="background-color: transparent;">
+    <div>
+      <a routerLinkActive="active" routerLink="/home">
+        <button mat-button class="navbar-button">Home</button>
+      </a>
+      <a routerLinkActive="active" routerLink="/invoices">
+        <button mat-button class="navbar-button">Invoices</button>
+      </a>
+
+    <div class="dropdown">
+      <a routerLinkActive="active" routerLink="/services">
+        <button mat-button class="navbar-button services-button" #servicesButton>Services</button>
+      </a>
+      <div class="dropdown-content">
+        <a href="#" mat-button>Resedential Cleaning</a>
+        <a href="#" mat-button>Commercial Cleaning</a>
+        <a href="#" mat-button>Apartment Cleaning</a>
+      </div>
+    </div>
+
+      <a routerLinkActive="active" routerLink="/about-us">
+        <button mat-button class="navbar-button">About Us</button>
+      </a>
+      <a routerLinkActive="active" routerLink="/contact-us">
+        <button mat-button class="navbar-button">Contact Us</button>
+      </a>
+    </div>
+    <div>
+      <a routerLinkActive="active" routerLink="/consultation">
+        <button mat-button class="consult-button">Request Free Consultation</button>
+      </a>
+      <a routerLinkActive="active" routerLink="/login">
+        <button mat-button class="auth-button">Login</button>
+      </a>
+      <a routerLinkActive="active" routerLink="/register">
+        <button mat-button class="auth-button">Sign up</button>
+      </a>
+    </div>
+  </div>
