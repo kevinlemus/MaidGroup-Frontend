@@ -20,6 +20,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ServicesComponent } from './components/services/services.component';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatDividerModule} from '@angular/material/divider';
+
 
 
 @NgModule({
@@ -45,7 +48,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     HttpClientModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatFormFieldModule,
+    MatDividerModule
     
   ],
   providers: [],

@@ -1,1 +1,26 @@
-<p>login-page works!</p>
+<div class="container">
+    <mat-card>
+<div class="content">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" name="email" required>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" required>
+        </mat-form-field>
+
+        <button mat-raised-button type="submit" class="login-button">Login</button>
+        <button mat-button type="submit" class="forgot-password">Forgot password?</button>
+        <mat-divider></mat-divider>
+        <button mat-raised-button type="submit" class="account-button">Create new account</button>
+        
+      </form>
+    </mat-card-content>
+</div>
+  </mat-card>
+</div>
