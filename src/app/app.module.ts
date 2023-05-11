@@ -22,6 +22,7 @@ import { ServicesComponent } from './components/services/services.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatDividerModule} from '@angular/material/divider';
+import { ZipcodeComponent } from './components/home/zipcode/zipcode.component';
 
 
 
@@ -39,6 +40,7 @@ import {MatDividerModule} from '@angular/material/divider';
     AboutUsComponent,
     ContactUsComponent,
     ServicesComponent,
+    ZipcodeComponent,
   ],
   imports: [
     BrowserModule,
