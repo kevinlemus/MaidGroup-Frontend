@@ -6,7 +6,7 @@
 
 .navbar-button {
   margin-right: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(149, 189, 255);
 }
 .navbar-button:hover {
   margin-right: 20px;
@@ -27,12 +27,18 @@
 .auth-button {
   margin-right: 10px;
   color: rgb(255, 255, 255);
-  background-color: rgb(180, 228, 255);
+  background-color: rgb(149, 189, 255);
 }
 
 .auth-button:hover {
   text-decoration: underline;
 }
+
+.top-right-buttons {
+    display: flex;
+    margin-right: 10px;
+}
+
 
 img {
   width: 10%;
@@ -40,10 +46,13 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 10px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 div {
-  background-color: rgb(180, 228, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .dropdown {

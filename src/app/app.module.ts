@@ -23,6 +23,11 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatDividerModule} from '@angular/material/divider';
 import { ZipcodeComponent } from './components/home/zipcode/zipcode.component';
+import { InfoCardsComponent } from './components/home/info-cards/info-cards.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatAccordion } from '@angular/material/expansion';
 
 
 
@@ -41,6 +46,7 @@ import { ZipcodeComponent } from './components/home/zipcode/zipcode.component';
     ContactUsComponent,
     ServicesComponent,
     ZipcodeComponent,
+    InfoCardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,8 +58,10 @@ import { ZipcodeComponent } from './components/home/zipcode/zipcode.component';
     MatCardModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatDividerModule
-    
+    MatDividerModule,
+    MatExpansionModule,
+    MatIconModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
