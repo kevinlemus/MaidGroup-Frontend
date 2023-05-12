@@ -5,6 +5,8 @@ import { LoginPageComponent } from './components/auth/login-page/login-page.comp
 import { RegisterComponent } from './components/user/register/register.component';
 import { InvoiceComponent } from './components/user/invoice/invoice.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { InvoiceListComponent } from './components/user/invoice-list/invoice-list.component';
+import { ConsultationComponent } from './components/consultation/consultation.component';
 
 
 const routes: Routes = [
@@ -12,8 +14,9 @@ const routes: Routes = [
   {path: "", component: HomePageComponent},
   {path: "login", component: LoginPageComponent},
   {path: "register", component: RegisterComponent},
-  {path: "invoices", component: InvoiceComponent},
-  {path: "about-us", component: AboutUsComponent}
+  {path: "invoices", component: InvoiceListComponent},
+  {path: "about-us", component: AboutUsComponent},
+  {path: "consultation", component: ConsultationComponent}
 ];
 
 @NgModule({

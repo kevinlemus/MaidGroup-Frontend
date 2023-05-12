@@ -1,6 +1,8 @@
+/*
+  
   .invoice-title span {
-    margin-left: 10px; /* adjust as needed */
-    font-size: 14px; /* adjust as needed */
+    margin-left: 10px; 
+    font-size: 14px; 
   }
 
   .invoice-title {
@@ -55,3 +57,72 @@
     text-align: center;    
   }
   
+  */
+
+
+
+.icon-container {
+  color: black;
+  overflow: hidden;
+}
+.bottom-text {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  color: black;
+}
+
+.panel-container .mat-expansion-panel-header-description {
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-expansion-panel {
+  background-color: rgb(255, 255, 255);
+  box-shadow: none;
+}
+
+::ng-deep .mat-expansion-indicator:after {
+  color: black !important;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: rgb(223, 255, 216);
+  color: black;
+}
+
+.grid-container {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 300px;
+  align-items: center;
+  height: 40px;
+  overflow: auto;
+}
+
+.grid-item {
+  min-width: 300px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+mat-card-actions {
+  margin-bottom: -20px !important;
+}
+
+.bottom-text {
+    margin-bottom: 10px;
+}
+
+.description-row {
+    margin-bottom: 20px;
+    font-size: 14.5px;
+}
+
+.bold-text {
+    font-weight: 599.5;
+}

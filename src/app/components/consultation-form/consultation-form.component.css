@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(211, 230, 255, 0.151);
+  }
+  
+  mat-card {
+    width: 50em;
+    background-color: rgb(223, 255, 216);
+    color: rgb(129, 129, 129);
+    margin-top: -15%;
+  }
+  
+  mat-form-field {
+    margin-bottom: -10px;
+  }
+  
+  mat-form-field input {
+    margin-bottom: 5px;
+    width: 320px;
+    font-size: 1.2em;
+    padding: 0.8em;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: rgb(247, 200, 224);
+    margin-bottom: 10px;
+  }
+  
+  .login-button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(247, 200, 224);
+    margin-bottom: 10px;
+  }
+  
+  .account-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: white;
+    background-color: rgb(149, 189, 255);
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .account-button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background-color: rgb(180, 228, 255);
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  mat-divider {
+    background-color: rgb(194, 194, 194);
+    margin-bottom: 30px;
+  }
+  
+  .google-login-button,
+  .facebook-login-button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 26px;
+    border-radius: 29px;
+    margin-bottom: 1em;
+    background-color: rgba(211, 230, 255, 0.151);
+  }
+  
+  .google-login-button:hover,
+  .facebook-login-button:hover {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 26px;
+    border-radius: 29px;
+    margin-bottom: 1em;
+    background-color: rgba(211, 230, 255, 0.384);
+  }
+  
+  .google-login-button i,
+  .facebook-login-button i {
+    vertical-align: unset;
+    margin-right: 8px;
+    width: auto;
+  }
+
+  .inline-calendar-card {
+    width: 300px;
+  }

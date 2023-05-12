@@ -18,31 +18,27 @@
       <mat-divider></mat-divider>
 
       <mat-card-content>
-        <form>
-          <mat-form-field>
-            <mat-label>Email</mat-label>
+        <div class="inputs">
             <input
-              matInput
+              
               type="email"
               name="email"
               required
               placeholder="Username or email"
             />
-            <mat-label>Password</mat-label>
             <input
-              matInput
+              
               type="password"
               name="password"
               required
               placeholder="Password"
             />
-          </mat-form-field>
+          </div>
 
           <button mat-button type="submit" class="login-button">Login</button>
           <button mat-button type="submit" class="forgot-password">
             Forgot password?
           </button>
-        </form>
 
         <mat-divider></mat-divider>
         <button mat-button type="submit" class="account-button">

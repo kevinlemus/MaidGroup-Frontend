@@ -36,39 +36,37 @@
 }
 
 .find-maids:hover {
-    background-color: rgb(203, 255, 192);;
+  background-color: rgb(203, 255, 192);
 }
 
 .zip-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 800px;
-    top: 250px;
-    color: white;
-    background-color:rgb(149, 190, 255);
-    margin: 0 auto;
-    box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  top: 250px;
+  color: white;
+  background-color: rgb(149, 190, 255);
+  margin: 0 auto;
+  box-shadow: none;
+}
 
-   }
-   
-   .zip-form-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-
+.zip-form-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 mat-card-title {
-    color: white;
-    font-size: xx-large;
-    margin-bottom: 30px;
+  color: white;
+  font-size: xx-large;
+  margin-bottom: 30px;
 }
 
 mat-card-subtitle {
-    font-size: large;
-    margin-bottom: 0px;
+  font-size: large;
+  margin-bottom: 0px;
 }
 
 mat-form-field {
@@ -79,4 +77,26 @@ mat-form-field {
 mat-form-field input {
   font-size: 1em;
   padding: 0.8em;
+}
+
+.zip-input {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgb(red, green, blue);
+  border: 1px solid black;
+  background-color: transparent;
+  background-color: white;
+}
+
+
+
+.zip-input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.mat-form-field-underline {
+  display: none !important;
 }
