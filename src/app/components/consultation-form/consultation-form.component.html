@@ -1,85 +1,52 @@
 <div class="container">
   <mat-card>
     <div class="content">
-      <mat-card-title style="color: black"> Schedule your free consultation</mat-card-title>
-      <mat-card-subtitle style="color: rgb(119, 119, 119);">It's quick and easy.</mat-card-subtitle>
-
+      <mat-card-title style="color: black">
+        Schedule your free consultation</mat-card-title
+      >
+      <mat-card-subtitle style="color: rgb(119, 119, 119)"
+        >It's quick and easy.</mat-card-subtitle
+      >
 
       <mat-divider></mat-divider>
 
-      <mat-card-content>
-        <form>
-          <div>
-            <mat-form-field>
-              <mat-label>First Name</mat-label>
-              <input
-                type="text"
-                name="firstName"
-                required
-                placeholder="First name"
-              />
-            </mat-form-field>
-            <mat-form-field>
-              <mat-label>Last Name</mat-label>
-              <input
-                type="text"
-                name="lastName"
-                required
-                placeholder="Last name"
-              />
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field>
-              <mat-label>Email</mat-label>
-              <input type="email" name="email" required placeholder="Email" />
-            </mat-form-field>
+      <div class="inputs">
+        <input type="text" name="firstName" required placeholder="First name" />
+        <input type="text" name="lastName" required placeholder="Last name" />
+      </div>
+      <div class="row2-inputs">
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="maids@example.com"
+        />
 
-            <mat-form-field>
-              <mat-label>Telephone</mat-label>
-              <span matPrefix>+1 &nbsp;</span>
-              <input type="tel" placeholder="555-555-1234" />
-              <mat-icon matSuffix>mode_edit</mat-icon>
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-form-field>
-              <mat-label>Message</mat-label>
-              <input
-                type="message"
-                name="message"
-                required
-                placeholder="Enter your message here"
-              />
-            </mat-form-field>
-          </div>
-          <div>
-            <mat-card class="inline-calendar-card">
-              <mat-calendar [(selected)]="selected"></mat-calendar>
-            </mat-card>
-            <p>Selected date: {{ selected }}</p>
-          </div>
-          <div>
-            <mat-form-field>
-              <mat-label>Select gender</mat-label>
-              <mat-select>
-                <mat-option> Male </mat-option>
-                <mat-option> Female </mat-option>
-                <mat-option> Other </mat-option>
-              </mat-select>
-            </mat-form-field>
-          </div>
-          <button mat-button type="submit" class="login-button">Login</button>
-          <button mat-button type="submit" class="forgot-password">
-            Forgot password?
-          </button>
-        </form>
+        <input
+          class="phone-number"
+          type="text"
+          mask="(000) 000-0000"
+          name="phone-number"
+          required
+          placeholder="Phone number"
+        />
+        <mat-icon matSuffix class="icon">phone</mat-icon>
+      </div>
+      <div class="row3-inputs">
+        <mat-form-field appearance="fill">
+          <mat-label style="color: grey; font-size: 1.2em;" >Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-hint style="color: grey;">MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker" style="color: grey;"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+      </div>
+      <mat-divider></mat-divider>
 
-        <mat-divider></mat-divider>
-        <button mat-button type="submit" class="account-button">
-          Submit Consultation
-        </button>
-      </mat-card-content>
+      <button mat-button type="submit" class="submit-button">
+        Submit Consultation
+      </button>
     </div>
   </mat-card>
 </div>

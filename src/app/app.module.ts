@@ -34,6 +34,7 @@ import { ConsultationFormComponent } from './components/consultation-form/consul
 import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { MatNativeDateModule } from '@angular/material/core';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -75,6 +76,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatInputModule,
     MatSelectModule,
     MatNativeDateModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
