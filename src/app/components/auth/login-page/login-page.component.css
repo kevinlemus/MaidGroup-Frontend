@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: rgba(211, 230, 255, 0.151);
 }
 
@@ -10,7 +9,8 @@ mat-card {
   width: 25em;
   background-color: white;
   color: rgb(129, 129, 129);
-  margin-top: -15%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .inputs {

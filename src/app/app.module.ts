@@ -77,6 +77,7 @@ import { NgxMaskModule } from 'ngx-mask';
     MatSelectModule,
     MatNativeDateModule,
     NgxMaskModule.forRoot(),
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
