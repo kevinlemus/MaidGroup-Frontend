@@ -13,14 +13,9 @@
             >Our maids provide services nationwide.</mat-card-subtitle
           >
           <div class="input-container">
-            <mat-form-field>
-              <input
-                class="zip-input"
-                maxlength="5"
-                type="text"
-                name="zipcode"
-                placeholder="Enter ZIP Code"
-              />
+            <mat-form-field appearance="fill">
+              <mat-label>Enter ZIP Code</mat-label>
+              <input matInput class="zip-input" maxlength="5" type="text" name="zipcode">
             </mat-form-field>
             <button mat-raised-button type="submit" class="find-maids">
               Find Maids

@@ -27,178 +27,102 @@ mat-divider {
   background-color: rgb(149, 189, 255);
   margin: 0 auto;
   margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: large;
 }
 
 .submit-button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
   background-color: rgb(180, 228, 255);
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
-
-.inputs {
+.all-boxes {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.inputs,
+.row2-inputs,
+.row3-inputs {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 0px;
   padding-top: 30px;
-  display: flex;
 }
 
-.inputs input {
-  margin-bottom: 0px;
-  width: 320px;
-  font-size: 1.2em;
-  padding: 0.8em;
-  margin-right: 10px;
+.inputs mat-form-field,
+.row2-inputs mat-form-field,
+.row3-inputs mat-form-field {
+  width: 48%; /* Adjust as needed */
+}
+/* Add a white background and a border radius to the input fields */
+::ng-deep .mat-form-field-flex {
+  background-color: white !important;
+  border: 1px solid black;
+  border-radius: 3px !important;
 }
 
-.row2-inputs {
-  margin-top: -20px;
-  margin-bottom: 10px;
-  padding-top: 30px;
-  display: flex;
-}
-
-.row2-inputs input {
-  margin-bottom: 5px;
-  width: 240px;
-  font-size: 1.2em;
-  padding: 0.8em;
-  margin-right: 10px;
-}
-
-.icon {
-  position: absolute;
-  top: 184px;
-  right: 40px;
-}
-
-.row2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap !important;
-}
-.row3-inputs {
-  display: flex; /* This will arrange the child elements in a row */
-  justify-content: space-between; /* This will put some space between the child elements */
-  align-items: center;
-  flex-wrap: nowrap !important;
-}
-.row3-inputs mat-datepicker-toggle {
-  position: absolute;
-  right: 0px;
-}
-
-.mat-input-element {
-  font-size: 1.2em;
-  background-color: white;
-  padding: 0.8em; /* Match the padding of the other inputs */
-  border: 1px solid #757575;
-  border-radius: 2px; /* Add this line to make the edges rounded */
-}
-
+/* Change the color of the placeholders to grey */
 ::ng-deep .mat-form-field-label {
-  color: grey !important; /* Change the color of the placeholder */
-  line-height: 2em !important; /* Adjust this value as needed */
-  padding-top: 3px; /* Adjust this value as needed */
-  padding-left: 16px;
-  font-size: 1.2em !important;
-}
-
-::ng-deep .mat-datepicker-toggle {
-  color: rgb(119, 119, 119) !important;
-  top: 9px;
-}
-
-::ng-deep .mat-form-field-appearance-fill .mat-form-field-hint-wrapper {
-  color: black !important;
-}
-
-/* New additions */
-::ng-deep .mat-calendar {
-  background-color: rgb(
-    255,
-    255,
-    255
-  ) !important; /* Change the color of the calendar dropdown */
-}
-
-::ng-deep .mat-calendar-body-cell-content {
-  color: black !important; /* Change the color of the text in the calendar dropdown */
-}
-::ng-deep .mat-form-field-underline {
-  display: none !important;
-}
-::ng-deep .mat-hint {
-  color: grey !important; /* Change the color of the hint text */
-  margin-left: 10px;
-}
-
-::ng-deep .mat-input-element {
-  color: black !important;
-}
-
-::ng-deep .mat-calendar,
-::ng-deep .mat-calendar-body,
-::ng-deep .mat-calendar-body-label,
-::ng-deep .mat-calendar-period-button,
-::ng-deep .mat-calendar-previous-button,
-::ng-deep .mat-calendar-next-button {
-  color: black !important;
-}
-::ng-deep .mat-calendar-arrow,
-::ng-deep .mat-calendar-table-header {
-  color: black !important;
-}
-
-::ng-deep .mat-select-arrow {
-  color: black !important;
+  color: grey !important;
 }
 
 ::ng-deep .mat-input-element {
   caret-color: black !important;
   max-width: 90% !important;
 }
-::ng-deep .mat-calendar-table-header-divider {
-  border: none !important;
-  border-top: 1px solid rgb(199, 199, 199) !important;
+
+/* Add a glow when the input is selected */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-flex {
+  border-color: rgb(149, 189, 255);
+  box-shadow: 0 0 5px rgb(149, 189, 255);
 }
-::ng-deep .mat-input-element:focus {
-  outline: 2px solid black !important;
-  outline-offset: -2px !important; /* Adjust as needed */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: transparent !important;
 }
-::ng-deep .mat-calendar-arrow {
-  fill: #000;
-}
-/* New CSS for mat-select */
-::ng-deep .mat-select-panel {
-  background-color: white !important;
-}
-/* New CSS for mat-form-field */
-::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
-  margin-top: 12px;
-  background-color: white !important; /* Make the background white */
-  border: 1px solid #757575 !important; /* Make the border grey */
-  border-radius: 2px !important; /* Make the corners rounded */
-  height: 48px;
+/* Remove the underline when the input is unselected */
+::ng-deep .mat-form-field-underline {
+  display: none;
 }
 
-::ng-deep .mat-select-trigger {
-  width: 100% !important; /* Make the input box take up the full width of the form field */
-}
-::ng-deep .mat-option-text {
-  color: black !important; /* Make the text color black */
-}
-::ng-deep .mat-option-disabled .mat-option-text {
-  color: grey !important; /* Make the text color grey */
-  text-decoration: line-through; /* Add a line through the text */
+/* Remove the underline when the input is hovered */
+::ng-deep .mat-form-field:hover .mat-form-field-underline::before {
+  display: none;
 }
 
-::ng-deep .mat-form-field-wrapper {
-  width: 96%;
+/* Remove the underline when the input is selected */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-underline::after {
+  display: none;
 }
-::ng-deep mat-form-field {
-  width: 70%; /* Adjust as needed */
+
+/*adjust spacing between rows*/
+.inputs,
+.row2-inputs,
+.row3-inputs,
+.row4-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px; /* Reduce the vertical spacing */
+  margin-bottom: -8px;
+  padding-top: -0px; /* Reduce the vertical spacing */
+}
+
+/* Change drop down arrow */
+::ng-deep .mat-select-arrow {
+  color: grey !important;
+}
+/* Change the color of the calendar dropdown */
+::ng-deep .mat-icon-button {
+  color: grey;
+}
+
+.row4-inputs .message-field {
+  width: 100%;
+}
+/* Change the color of the text to black when typing */
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+  color: black !important;
+}
+
+/* Change the color of the text to black when not focused */
+::ng-deep .mat-form-field .mat-input-element {
+  color: black !important;
 }

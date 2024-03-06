@@ -35,6 +35,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgxMaskModule } from 'ngx-mask';
+import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 
 
 
@@ -56,6 +57,7 @@ import { NgxMaskModule } from 'ngx-mask';
     InfoCardsComponent,
     ConsultationComponent,
     ConsultationFormComponent,
+    RegistrationFormComponent,
   ],
   imports: [
     BrowserModule,

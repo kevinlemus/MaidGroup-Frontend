@@ -31,7 +31,7 @@
 .find-maids {
   color: black;
   background-color: rgb(223, 255, 216);
-  transform: scale(1.2);
+  transform: scale(1.45);
   margin-left: 12px;
 }
 
@@ -51,11 +51,8 @@
   box-shadow: none;
 }
 
-.zip-form-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.input-container {
+  margin-top: -10px;
 }
 
 mat-card-title {
@@ -64,39 +61,56 @@ mat-card-title {
   margin-bottom: 30px;
 }
 
-mat-card-subtitle {
-  font-size: large;
-  margin-bottom: 0px;
-}
 
 mat-form-field {
-  margin-right: 20px;
-  margin-top: 9px;
+  
+  margin-right: 15px;
+  margin-top: 19.5px;
 }
-
-mat-form-field input {
-  font-size: 1em;
-  padding: 0.8em;
-}
-
-.zip-input {
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 1.2em;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 2px 4px rgb(red, green, blue);
-  border: 1px solid black;
-  background-color: transparent;
-  background-color: white;
-}
-
-
 
 .zip-input::placeholder {
-  color: #000000;
-  opacity: 1;
+  color: grey;
 }
 
 .mat-form-field-underline {
   display: none !important;
+}
+
+/* Change the color of the placeholders to grey */
+::ng-deep .mat-form-field-label {
+  color: grey !important;
+}
+
+::ng-deep .mat-input-element {
+  caret-color: black !important;
+  max-width: 90% !important;
+}
+
+/* Add a glow when the input is selected */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-flex {
+  border-color: rgb(149, 189, 255);
+  box-shadow: 0 0 5px rgb(149, 189, 255);
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: transparent !important;
+}
+
+/* Remove the underline when the input is unselected */
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+/* Remove the underline when the input is hovered */
+::ng-deep .mat-form-field:hover .mat-form-field-underline::before {
+  display: none;
+}
+
+/* Remove the underline when the input is selected */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-underline::after {
+  display: none;
+}
+
+/* Change the color of the text to black when typing */
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+  color: black !important;
 }

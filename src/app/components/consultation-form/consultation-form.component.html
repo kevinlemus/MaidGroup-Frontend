@@ -10,60 +10,50 @@
 
       <mat-divider></mat-divider>
 
+      <div class="all-boxes">
       <div class="inputs">
-        <input type="text" name="firstName" required placeholder="First name" />
-        <input type="text" name="lastName" required placeholder="Last name" />
+        <mat-form-field appearance="fill">
+          <mat-label>First name</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Last name</mat-label>
+          <input matInput required>
+        </mat-form-field>
       </div>
       <div class="row2-inputs">
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="maids@example.com"
-        />
-
-        <input
-          class="phone-number"
-          type="text"
-          mask="(000) 000-0000"
-          name="phone-number"
-          required
-          placeholder="Phone number"
-        />
-        <mat-icon matSuffix class="icon">phone</mat-icon>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Phone number</mat-label>
+          <input matInput type="tel" mask="(000) 000 - 0000" required>
+          <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
       </div>
       <div class="row3-inputs">
-        <mat-form-field floatLabel="never">
-          <mat-label>Choose a date</mat-label>
-          <input
-            matInput
-            [matDatepicker]="picker"
-            placeholder="Choose a date"
-          />
-          <mat-hint>MM/DD/YYYY</mat-hint>
-          <mat-datepicker-toggle
-            matIconSuffix
-            [for]="picker"
-          ></mat-datepicker-toggle>
-          <mat-datepicker
-            #picker
-            startView="year"
-            [startAt]="selected"
-          ></mat-datepicker>
+        <mat-form-field appearance="fill">
+          <mat-label>Choose a date (MM/DD/YYYY)</mat-label>
+          <input matInput [matDatepicker]="picker" #datePicker placeholder="Choose a date (mm/dd/yyyy)" mask="00/00/0000">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-        <mat-form-field appearance="fill" class="time">
-          <mat-label>Select a time</mat-label>
-          <mat-select [disabled]="disableSelect">
+        <mat-form-field appearance="fill">
+          <mat-label>Options</mat-label>
+          <mat-select>
             <mat-option value="option1">Option 1</mat-option>
-            <mat-option value="option2" disabled>Option 2 (disabled)</mat-option>
-            <mat-option value="option3">Option 3</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
           </mat-select>
         </mat-form-field>
-        
       </div>
-
-      <mat-divider></mat-divider>
-
+      <div class="row4-inputs">
+        <mat-form-field appearance="fill" class="message-field">
+          <mat-label>Message</mat-label>
+          <textarea matInput rows="5"></textarea> <!-- Adjust the number of rows as needed -->
+        </mat-form-field>
+      </div>
+    </div>  
       <button mat-button type="submit" class="submit-button">
         Submit Consultation
       </button>
