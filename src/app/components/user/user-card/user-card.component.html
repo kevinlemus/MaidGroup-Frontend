@@ -1,0 +1,11 @@
+<div class="user-card">
+    <div class="profile-pic-container">
+      <img [src]="user.profilePic || 'assets/default-profile-pic.png'" alt="Profile Picture" class="profile-pic" />
+    </div>
+    <div class="user-info">
+      <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+      <p>{{ user.email }}</p>
+      <p>{{ user.gender }}</p>
+    </div>
+  </div>
+  

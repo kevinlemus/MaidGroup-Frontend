@@ -1,14 +1,57 @@
-<!---// <button mat-raised-button color="primary" (click)="findInvoices()">Find Invoices</button> -->
-<div *ngFor="let invoice of invoices">
-<app-invoice [invoice]="invoice"></app-invoice>
-</div>
-
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
-<app-invoice></app-invoice>
+<mat-tab-group>
+  <mat-tab label="Invoices">
+    <div class="search-bar-container">
+      <app-invoice-search-bar></app-invoice-search-bar>
+    </div>
+    <div class="invoice-container">
+      <div *ngFor="let invoice of invoices | slice : (page - 1) * pageSize : page * pageSize">
+        <app-invoice [invoice]="invoice"></app-invoice>
+      </div>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+      <app-invoice></app-invoice>
+    </div>
+    <div class="paginator-container">
+      <mat-paginator
+        [length]="invoices.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[20, 50, 100]"
+        (page)="pageEvent = $event"
+      >
+      </mat-paginator>
+    </div>
+  </mat-tab>
+  <mat-tab label="Users">
+    <div class="search-bar-container">
+      <app-user-search-bar></app-user-search-bar>
+    </div>
+    <div class="user-container">
+      <div *ngFor="let user of users | slice : (page - 1) * pageSize : page * pageSize" class="user-card">
+        <div class="profile-pic-container">
+          <img [src]="user.profilePic || 'assets/default-profile-pic.png'" alt="Profile Picture" class="profile-pic" />
+        </div>
+        <div class="user-info">
+          <h3>{{ user.firstName }} {{ user.lastName }}</h3>
+          <p>{{ user.email }}</p>
+          <p>{{ user.gender }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="paginator-container">
+      <mat-paginator
+        [length]="users.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[20, 50, 100]"
+        (page)="pageEvent = $event"
+      >
+      </mat-paginator>
+    </div>
+  </mat-tab>
+  <mat-tab label="Consultations">
+    <!-- Consultations content here -->
+  </mat-tab>
+</mat-tab-group>

@@ -1,44 +1,40 @@
 <div class="container">
   <mat-card>
-    <div class="content">
-      <mat-card-header> </mat-card-header>
-      <!-- Add Google and Facebook login buttons with icons -->
+    <mat-card-header> </mat-card-header>
+
+    <mat-card-content>
       <div>
-        <button mat-button class="google-login-button">
-          <i class="fab fa-google"></i>
-          <span class="google-text"> Sign in with Google</span>
+        <button mat-raised-button class="google-login-button">
+          <i class="fab fa-google"></i> Sign in with Google
         </button>
       </div>
       <div>
-        <button mat-button class="facebook-login-button">
+        <button mat-raised-button class="facebook-login-button">
           <i class="fab fa-facebook-f"></i> Sign in with Facebook
         </button>
       </div>
 
       <mat-divider></mat-divider>
 
-      <mat-card-content>
-        <div class="inputs">
-          <mat-form-field class="username-email" appearance="fill">
-            <mat-label>Username or email</mat-label>
-            <input matInput type="email" name="email" required>
-          </mat-form-field>
-          <mat-form-field class="password" appearance="fill">
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password" required>
-          </mat-form-field>
-        </div>
+      <div class="inputs">
+        <mat-form-field class="username-email custom-placeholder" appearance="fill">
+          <mat-label>Username or email</mat-label>
+          <input matInput type="email" name="email" required>
+        </mat-form-field>
+        <mat-form-field class="password custom-placeholder" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" required>
+        </mat-form-field>
+      </div>
 
-        <button mat-button type="submit" class="login-button">Login</button>
-        <button mat-button type="submit" class="forgot-password">
-          Forgot password?
-        </button>
+      <mat-checkbox class="remember-me custom-checkbox">Remember me</mat-checkbox>
 
-        <mat-divider></mat-divider>
-        <button mat-button type="submit" class="account-button">
-          Create new account
-        </button>
-      </mat-card-content>
-    </div>
+      <button mat-raised-button class="login-button" type="submit">Login</button>
+      <button mat-button class="forgot-password" type="button">Forgot password?</button>
+
+      <mat-divider></mat-divider>
+
+      <button mat-raised-button class="account-button" type="button">Create new account</button>
+    </mat-card-content>
   </mat-card>
 </div>

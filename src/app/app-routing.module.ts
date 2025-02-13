@@ -10,19 +10,18 @@ import { ConsultationComponent } from './components/consultation/consultation.co
 import { ConsultationFormComponent } from './components/consultation-form/consultation-form.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
 
-
 const routes: Routes = [
-  {path: "home", component: HomePageComponent},
-  {path: "", component: HomePageComponent},
-  {path: "login", component: LoginPageComponent},
-  {path: "register", component: RegistrationFormComponent},
-  {path: "invoices", component: InvoiceListComponent},
-  {path: "about-us", component: AboutUsComponent},
-  {path: "consultation", component: ConsultationFormComponent},
+  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'login', component: LoginPageComponent },
+  { path: 'register', component: RegistrationFormComponent },
+  { path: 'invoices', component: InvoiceListComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'consultation', component: ConsultationFormComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

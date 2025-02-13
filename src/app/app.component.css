@@ -1,4 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container {
+    flex: 1 0 auto; /* This will push the footer and filler down */
     max-width: 1600px; /* Adjust this value as needed */
     margin: 0 auto; /* This centers the container */
+}
+
+.app-footer-form {
+    flex-shrink: 0; /* This will prevent the footer from shrinking */
+}
+
+.filler {
+    flex-grow: 1; /* This will allow the filler to grow and take up remaining space */
+    background-color: rgb(149, 189, 255 );
+    border-radius: 0px;
+    box-shadow: none;
 }

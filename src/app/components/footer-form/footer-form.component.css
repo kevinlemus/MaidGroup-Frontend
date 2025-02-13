@@ -1,0 +1,66 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(149, 189, 255); /* same as your footer background */
+  height: auto;
+}
+
+.footer-container {
+  padding-top: 20px;
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links a {
+  color: white;
+  margin: 0 80px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.link-row {
+  display: contents;
+}
+
+.social-icons {
+  margin-left: 220px;
+  color: pink !important;
+  margin-right: 50px;
+}
+
+.social-icons i {
+  margin-right: 40px;
+}
+
+.logo-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 15px; /* Add this line */
+}
+.logo img {
+  width: 100px; /* Adjust this value to the desired size */
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  scale: 2.2;
+  margin-right: 270px;
+}
+
+/* Adjust the size for smaller screens */
+@media (max-width: 600px) {
+  .logo img {
+    width: 100px; /* Adjust this value to the desired size for small screens */
+  }
+}

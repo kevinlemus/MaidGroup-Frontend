@@ -25,19 +25,27 @@ import { MatDividerModule } from '@angular/material/divider';
 import { ZipcodeComponent } from './components/home/zipcode/zipcode.component';
 import { InfoCardsComponent } from './components/home/info-cards/info-cards.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatTableModule } from '@angular/material/table';
 import { ConsultationComponent } from './components/consultation/consultation.component';
 import { ConsultationFormComponent } from './components/consultation-form/consultation-form.component';
 import { MatInputModule } from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgxMaskModule } from 'ngx-mask';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
-
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FooterFormComponent } from './components/footer-form/footer-form.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { InvoiceSearchBarComponent } from './components/search-bar/invoice-search/invoice-search-bar/invoice-search-bar.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { UserSearchBarComponent } from './components/search-bar/user-search/user-search-bar/user-search-bar.component';
+import { UserCardComponent } from './components/user/user-card/user-card.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +66,12 @@ import { RegistrationFormComponent } from './components/registration-form/regist
     ConsultationComponent,
     ConsultationFormComponent,
     RegistrationFormComponent,
+    FooterFormComponent,
+    InvoiceSearchBarComponent,
+    UserSearchBarComponent,
+    UserCardComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -80,6 +93,12 @@ import { RegistrationFormComponent } from './components/registration-form/regist
     MatNativeDateModule,
     NgxMaskModule.forRoot(),
     MatInputModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatTabsModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

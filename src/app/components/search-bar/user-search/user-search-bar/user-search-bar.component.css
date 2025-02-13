@@ -1,0 +1,96 @@
+.search-bar-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the items wrap in case of smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white; /* Ensure the background is visible */
+    gap: 20px; /* Reduce the gap for better spacing */
+  }
+  
+  .input-field {
+    flex: 1 1 150px; /* Flex grow to ensure fields take available space, with minimum width */
+  }
+  
+  .keyword-field {
+    flex: 2 1 300px; /* Flex grow to take more space, with minimum width */
+  }
+  
+  .search-button {
+    padding: 0 4em; /* Increase horizontal padding */
+    height: 4em; /* Match the height of the input fields */
+    background-color: grey;
+    color: white;
+    margin-top: -20px;
+  }
+  
+  .search-button:hover {
+    background-color: darkgrey;
+  }
+  
+  /* Adjust input fields */
+  ::ng-deep .mat-form-field-flex {
+    background-color: white !important;
+    border: 1px solid black;
+    border-radius: 3px !important;
+    padding: 0.5em 10px;
+  }
+  
+  /* Change the color of the placeholders to a darker grey */
+  ::ng-deep .mat-form-field-label,
+  ::ng-deep .mat-placeholder,
+  ::ng-deep .mat-input-element::placeholder {
+    color: rgb(77, 77, 77) !important;
+  }
+  
+  /* Ensure the text color is black when typing */
+  ::ng-deep .mat-input-element {
+    caret-color: black !important;
+    color: black !important;
+  }
+  
+  /* Add a glow when the input is selected */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-flex {
+    border-color: rgb(149, 189, 255);
+    box-shadow: 0 0 5px rgb(149, 189, 255);
+  }
+  
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: transparent !important;
+  }
+  
+  /* Remove the underline when the input is unselected */
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+  
+  /* Remove the underline when the input is hovered */
+  ::ng-deep .mat-form-field:hover .mat-form-field-underline::before {
+    display: none;
+  }
+  
+  /* Remove the underline when the input is selected */
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-underline::after {
+    display: none;
+  }
+  
+  /* Payment status dropdown arrow color */
+  ::ng-deep .mat-select-arrow {
+    color: rgb(77, 77, 77) !important;
+  }
+  
+  /* Payment status selected option text color */
+  ::ng-deep .mat-select-value-text {
+    color: black !important;
+  }
+  
+  /* Remove redundant placeholder for the date field */
+  ::ng-deep .mat-form-field .mat-form-field-infix .mat-input-element::placeholder-shown:not(.mat-form-field-empty):not(.mat-focused) + .mat-form-field-label-wrapper .mat-form-field-label {
+    display: none;
+  }
+  
+  /* Calendar icon visibility */
+  ::ng-deep .mat-datepicker-toggle-default-icon {
+    color: rgb(77, 77, 77) !important;
+  }
+  

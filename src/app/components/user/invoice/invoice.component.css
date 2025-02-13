@@ -1,128 +1,110 @@
-/*
-  
-  .invoice-title span {
-    margin-left: 10px; 
-    font-size: 14px; 
-  }
-
-  .invoice-title {
-    align-items: center;
-    margin-left: 0px;
-    font-size: 18px;
-    vertical-align: middle;
-  }
-
- .example-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    background-color:rgb(255, 255, 255);
-    color: black;
- }
-
- .id-span{
-    margin-top: 5px;
- }
-
- .services-button.hover {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
- .mat-card-actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
- }
-
- .invoice-date {
-    color: black;
- }
-
-  button{
-    align-items: right;
-    color: rgb(0, 0, 0);
-    background-color: white;
- }
-  
- button:hover{
-    align-items: right;
-    color: rgb(0, 0, 0);
-    background-color: rgb(194, 194, 194);
- }
- .service-text {
-    color: black;
-    text-align: center;    
-  }
-  
-  */
-
-
-
-.icon-container {
-  color: black;
-  overflow: hidden;
+/* Container styling for the panel */
+.panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adjusted padding to reduce space between cards */
 }
-.bottom-text {
+
+/* Styling for the invoice card */
+.invoice-card {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px; /* Adjusted margin to reduce space between cards */
+}
+
+/* Header styling */
+mat-card-header {
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  color: black;
-}
-
-.panel-container .mat-expansion-panel-header-description {
-  color: black;
-  justify-content: space-between;
-  align-items: center;
-}
-
-mat-expansion-panel {
-  background-color: rgb(255, 255, 255);
-  box-shadow: none;
-}
-
-::ng-deep .mat-expansion-indicator:after {
-  color: black !important;
-  margin-bottom: 8px;
-}
-
-button {
   background-color: rgb(223, 255, 216);
+  padding: 16px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Icon container styling */
+.icon-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.icon-container mat-icon {
   color: black;
+  font-size: 24px; /* Adjusted font size */
+}
+
+/* Summary details styling */
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Title and subtitle styling */
+.invoice-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.invoice-date {
+  font-size: 14px;
+  color: grey;
+  margin-left: 10px;
+}
+
+/* Content styling */
+mat-card-content {
+  padding: 16px;
 }
 
 .grid-container {
-  color: black;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 300px;
-  align-items: center;
-  height: 40px;
-  overflow: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-bottom: 16px;
 }
 
 .grid-item {
-  min-width: 300px;
-  text-overflow: ellipsis;
-  white-space: normal;
-  overflow: hidden;
-}
-
-mat-card-actions {
-  margin-bottom: -20px !important;
-}
-
-.bottom-text {
-    margin-bottom: 10px;
-}
-
-.description-row {
-    margin-bottom: 20px;
-    font-size: 14.5px;
+  min-width: 0;
 }
 
 .bold-text {
-    font-weight: 599.5;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Bottom text styling */
+.bottom-text {
+  margin-top: 16px;
+  color: grey;
+}
+
+/* Actions styling */
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.details-button,
+.print-button {
+  background-color: rgb(223, 255, 216);
+  color: black;
+  margin-right: 8px;
+}
+
+.details-button:hover,
+.print-button:hover {
+  background-color: #a5d6a7;
 }

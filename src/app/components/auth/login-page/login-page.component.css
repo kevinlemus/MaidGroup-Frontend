@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(211, 230, 255, 0.151);
+  height: 100vh;
 }
 
 mat-card {
@@ -11,119 +12,28 @@ mat-card {
   color: rgb(129, 129, 129);
   margin-top: 100px;
   margin-bottom: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.username-email {
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-.password {
-  margin-bottom: -15px;
-}
 .inputs {
-  margin-top: 50px !important;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.inputs mat-form-field {
+mat-form-field {
   width: 100%;
 }
 
-.login-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: white;
-  background-color: rgb(247, 200, 224);
-  margin-bottom: 10px;
-}
-
-.login-button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(247, 200, 224);
-  margin-bottom: 10px;
-}
-
-.account-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  color: white;
-  background-color: rgb(149, 189, 255);
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: -8px !important;
-}
-
-.account-button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  background-color: rgb(180, 228, 255);
-  margin: 0 auto;
-  margin-top: 36px;
-}
-
-.forgot-password {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
-}
-
-mat-divider {
-  background-color: rgb(194, 194, 194);
-  margin-bottom: 30px;
-}
-
-.google-login-button,
-.facebook-login-button {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 26px;
-  border-radius: 29px;
-  margin-bottom: 1em;
-  background-color: rgba(211, 230, 255, 0.151);
-}
-
-.google-login-button:hover,
-.facebook-login-button:hover {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 26px;
-  border-radius: 29px;
-  margin-bottom: 1em;
-  background-color: rgba(211, 230, 255, 0.384);
-}
-
-.google-login-button i,
-.facebook-login-button i {
-  vertical-align: unset;
-  margin-right: 8px;
-  width: auto;
-}
-
-/* Add a white background and a border radius to the input fields */
 ::ng-deep .mat-form-field-flex {
   background-color: white !important;
   border: 1px solid black;
   border-radius: 3px !important;
 }
 
-/* Change the color of the placeholders to grey */
-::ng-deep .mat-form-field-label {
-  color: grey !important;
+::ng-deep .mat-form-field-label,
+::ng-deep .mat-placeholder,
+::ng-deep .mat-input-element::placeholder {
+  color: rgb(77, 77, 77) !important;
 }
 
 ::ng-deep .mat-input-element {
@@ -131,30 +41,70 @@ mat-divider {
   max-width: 90% !important;
 }
 
-/* Add a glow when the input is selected */
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-flex {
   border-color: rgb(149, 189, 255);
   box-shadow: 0 0 5px rgb(149, 189, 255);
 }
+
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
   background-color: transparent !important;
 }
-/* Remove the underline when the input is unselected */
+
 ::ng-deep .mat-form-field-underline {
   display: none;
 }
 
-/* Remove the underline when the input is hovered */
 ::ng-deep .mat-form-field:hover .mat-form-field-underline::before {
   display: none;
 }
 
-/* Remove the underline when the input is selected */
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-underline::after {
   display: none;
 }
 
-/* Change the color of the text to black when typing */
 ::ng-deep .mat-form-field.mat-focused .mat-input-element {
   color: black !important;
+}
+
+.login-button {
+  width: 100%;
+  color: white;
+  background-color: rgb(247, 200, 224);
+  margin: 10px 0;
+}
+
+.login-button:hover {
+  background-color: rgb(255, 213, 235);
+}
+
+.account-button {
+  width: 100%;
+  color: white;
+  background-color: rgb(149, 189, 255);
+  margin: 20px 0;
+}
+
+.account-button:hover {
+  background-color: rgb(180, 228, 255);
+}
+
+mat-checkbox.custom-checkbox .mat-checkbox-frame {
+  border: 1px solid rgb(77, 77, 77) !important;
+}
+
+.google-login-button,
+.facebook-login-button {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: rgba(211, 230, 255, 0.151);
+  color: black;
+}
+
+.google-login-button:hover,
+.facebook-login-button:hover {
+  background-color: rgba(211, 230, 255, 0.384);
+}
+
+mat-divider {
+  background-color: rgb(194, 194, 194);
 }

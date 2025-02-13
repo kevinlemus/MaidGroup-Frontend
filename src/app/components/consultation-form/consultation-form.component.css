@@ -11,6 +11,7 @@ mat-card {
   background-color: rgb(223, 255, 216);
   color: rgb(129, 129, 129);
   margin-top: -15%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
 }
 
 mat-divider {
@@ -19,40 +20,37 @@ mat-divider {
 }
 
 .submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
+  width: 100%;
   color: white;
   background-color: rgb(149, 189, 255);
-  margin: 0 auto;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: large;
+  margin: 20px 0;
 }
 
 .submit-button:hover {
   background-color: rgb(180, 228, 255);
 }
+
 .all-boxes {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
+
 .inputs,
 .row2-inputs,
-.row3-inputs {
+.row3-inputs,
+.row4-inputs {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-top: 30px;
+  margin-bottom: -10px;
+  padding-top: 10px; /* Reduced vertical spacing */
 }
 
 .inputs mat-form-field,
 .row2-inputs mat-form-field,
 .row3-inputs mat-form-field {
-  width: 48%; /* Adjust as needed */
+  width: 48%;
 }
+
 /* Add a white background and a border radius to the input fields */
 ::ng-deep .mat-form-field-flex {
   background-color: white !important;
@@ -60,9 +58,11 @@ mat-divider {
   border-radius: 3px !important;
 }
 
-/* Change the color of the placeholders to grey */
-::ng-deep .mat-form-field-label {
-  color: grey !important;
+/* Change the color of the placeholders to a darker grey */
+::ng-deep .mat-form-field-label,
+::ng-deep .mat-placeholder,
+::ng-deep .mat-input-element::placeholder {
+  color: rgb(77, 77, 77) !important;
 }
 
 ::ng-deep .mat-input-element {
@@ -75,9 +75,11 @@ mat-divider {
   border-color: rgb(149, 189, 255);
   box-shadow: 0 0 5px rgb(149, 189, 255);
 }
+
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
   background-color: transparent !important;
 }
+
 /* Remove the underline when the input is unselected */
 ::ng-deep .mat-form-field-underline {
   display: none;
@@ -93,36 +95,11 @@ mat-divider {
   display: none;
 }
 
-/*adjust spacing between rows*/
-.inputs,
-.row2-inputs,
-.row3-inputs,
-.row4-inputs {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0px; /* Reduce the vertical spacing */
-  margin-bottom: -8px;
-  padding-top: -0px; /* Reduce the vertical spacing */
-}
-
-/* Change drop down arrow */
-::ng-deep .mat-select-arrow {
-  color: grey !important;
-}
-/* Change the color of the calendar dropdown */
-::ng-deep .mat-icon-button {
-  color: grey;
-}
-
-.row4-inputs .message-field {
-  width: 100%;
-}
 /* Change the color of the text to black when typing */
 ::ng-deep .mat-form-field.mat-focused .mat-input-element {
   color: black !important;
 }
 
-/* Change the color of the text to black when not focused */
-::ng-deep .mat-form-field .mat-input-element {
-  color: black !important;
+.row4-inputs .message-field {
+  width: 100%;
 }

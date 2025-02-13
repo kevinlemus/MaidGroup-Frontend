@@ -1,0 +1,85 @@
+/* Make the search bar sticky */
+.search-bar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white; /* Or any color that matches your design */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the scrollbars for invoice-container and user-container */
+.invoice-container, .user-container {
+  height: calc(100vh - 150px); /* Adjust this value based on your layout */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.invoice-container::-webkit-scrollbar, .user-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.invoice-container::-webkit-scrollbar-track, .user-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.invoice-container::-webkit-scrollbar-thumb, .user-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.invoice-container::-webkit-scrollbar-thumb:hover, .user-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Specific styling for user-container */
+.user-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Make the blocks squares */
+  height: 200px;
+  background-color: #f0f4ff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.profile-pic-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info {
+  text-align: center;
+}
+
+/* Override Angular Material tab label color */
+::ng-deep .mat-tab-label, ::ng-deep .mat-tab-link {
+  color: black !important; /* Change this to the color you want for the tab labels */
+}
+
+/* Override Angular Material tab underline color */
+::ng-deep .mat-ink-bar {
+  background-color: rgb(149, 189, 255) !important; /* Change this to the color you want for the tab underline */
+}

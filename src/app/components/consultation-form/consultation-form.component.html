@@ -1,45 +1,44 @@
 <div class="container">
   <mat-card>
-    <div class="content">
-      <mat-card-title style="color: black">
-        Schedule your free consultation</mat-card-title
-      >
-      <mat-card-subtitle style="color: rgb(119, 119, 119)"
-        >It's quick and easy.</mat-card-subtitle
-      >
+    <mat-card-title style="color: black">
+      Schedule your free consultation
+    </mat-card-title>
+    <mat-card-subtitle style="color: rgb(119, 119, 119)">
+      It's quick and easy.
+    </mat-card-subtitle>
 
-      <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
 
-      <div class="all-boxes">
+    <div class="all-boxes">
       <div class="inputs">
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>First name</mat-label>
           <input matInput required>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>Last name</mat-label>
           <input matInput required>
         </mat-form-field>
       </div>
       <div class="row2-inputs">
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>Email</mat-label>
           <input matInput type="email" required>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>Phone number</mat-label>
           <input matInput type="tel" mask="(000) 000 - 0000" required>
           <mat-icon matSuffix>phone</mat-icon>
         </mat-form-field>
       </div>
       <div class="row3-inputs">
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>Choose a date (MM/DD/YYYY)</mat-label>
-          <input matInput [matDatepicker]="picker" #datePicker placeholder="Choose a date (mm/dd/yyyy)" mask="00/00/0000">
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date (mm/dd/yyyy)" mask="00/00/0000">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field class="custom-placeholder" appearance="fill">
           <mat-label>Options</mat-label>
           <mat-select>
             <mat-option value="option1">Option 1</mat-option>
@@ -48,15 +47,15 @@
         </mat-form-field>
       </div>
       <div class="row4-inputs">
-        <mat-form-field appearance="fill" class="message-field">
+        <mat-form-field class="message-field custom-placeholder" appearance="fill">
           <mat-label>Message</mat-label>
-          <textarea matInput rows="5"></textarea> <!-- Adjust the number of rows as needed -->
+          <textarea matInput rows="5"></textarea>
         </mat-form-field>
       </div>
-    </div>  
-      <button mat-button type="submit" class="submit-button">
-        Submit Consultation
-      </button>
     </div>
+
+    <button mat-raised-button class="submit-button" type="submit">
+      Submit Consultation
+    </button>
   </mat-card>
 </div>

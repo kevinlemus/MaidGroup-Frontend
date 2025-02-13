@@ -1,69 +1,68 @@
 <div class="container">
-    <mat-card>
-      <div class="content">
-        <mat-card-title style="color: black">
-          Create Your Account</mat-card-title
-        >
-        <mat-card-subtitle style="color: rgb(119, 119, 119)"
-          >Join our community today.</mat-card-subtitle
-        >
-  
-        <mat-divider></mat-divider>
-  
-        <div class="all-boxes">
-        <div class="inputs">
-          <mat-form-field appearance="fill">
-            <mat-label>First name</mat-label>
-            <input matInput required>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Last name</mat-label>
-            <input matInput required>
-          </mat-form-field>
-        </div>
-        <div class="row2-inputs">
-          <mat-form-field appearance="fill">
-            <mat-label>Email</mat-label>
-            <input matInput type="email" required>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Username</mat-label>
-            <input matInput required>
-          </mat-form-field>
-        </div>
-        <div class="row3-inputs">
-          <mat-form-field appearance="fill">
-            <mat-label>Password</mat-label>
-            <input matInput type="password" required>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Confirm Password</mat-label>
-            <input matInput type="password" required>
-          </mat-form-field>
-        </div>
-        <div class="row4-inputs">
-          <mat-form-field appearance="fill">
-            <mat-label>Date of Birth</mat-label>
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date (mm/dd/yyyy)" mask="00/00/0000">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Gender</mat-label>
-            <mat-select>
-              <mat-option value="MALE">Male</mat-option>
-              <mat-option value="FEMALE">Female</mat-option>
-              <mat-option value="OTHER">Other</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-      </div>  
-  
-        <div class="disclaimer">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</div>
-        <button mat-button type="submit" class="submit-button">
-          Sign up
-        </button>
+  <mat-card>
+    <mat-card-title style="color: black">
+      Create Your Account
+    </mat-card-title>
+    <mat-card-subtitle style="color: rgb(119, 119, 119)">
+      Join our community today.
+    </mat-card-subtitle>
+
+    <mat-divider></mat-divider>
+
+    <div class="all-boxes">
+      <div class="inputs">
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>First name</mat-label>
+          <input matInput required>
+        </mat-form-field>
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Last name</mat-label>
+          <input matInput required>
+        </mat-form-field>
       </div>
-    </mat-card>
-  </div>
-  
+      <div class="row2-inputs">
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" required>
+        </mat-form-field>
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput required>
+        </mat-form-field>
+      </div>
+      <div class="row3-inputs">
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" required>
+        </mat-form-field>
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput type="password" required>
+        </mat-form-field>
+      </div>
+      <div class="row4-inputs">
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Date of Birth</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date (mm/dd/yyyy)" mask="00/00/0000">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="custom-placeholder" appearance="fill">
+          <mat-label>Gender</mat-label>
+          <mat-select>
+            <mat-option value="MALE">Male</mat-option>
+            <mat-option value="FEMALE">Female</mat-option>
+            <mat-option value="OTHER">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.
+    </div>
+    <button mat-raised-button class="submit-button" type="submit">
+      Sign up
+    </button>
+  </mat-card>
+</div>

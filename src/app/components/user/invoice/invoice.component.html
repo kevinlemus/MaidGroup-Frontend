@@ -1,69 +1,32 @@
-<!--<mat-card class="example-card">
-
-<div>
-  <mat-card-header>
-    <mat-card-title class="invoice-title">Invoice <span class="id-span">{{invoice.id}}</span><span class="id-span">#123456</span></mat-card-title>
-    <mat-card-subtitle class="invoice-date">{{getInvoiceDate() | date: 'mediumDate'}}<span class="invoice-date">December 11, 2020</span></mat-card-subtitle>
-  </mat-card-header>
-</div>
-
-<div>
-  <mat-card-content class="service-text">Service: 
-    <span>{{invoice.serviceName}}</span>
-  </mat-card-content>
-</div>
-
-<div>
-  <mat-card-actions>
-    <button mat-button>DETAILS</button>
-    <button mat-button>PRINT</button>
-  </mat-card-actions>
-</div>
-
-</mat-card>
--->
-
 <div class="panel-container">
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-description>
-        <div class="grid-container">
-          <div class="grid-item bold-text">November 4, 2023</div>
-
-          <div class="grid-item"><span class="bold-text">Invoice:</span> #123456</div>
-        </div>
-
-        <div class="icon-container">
-          <mat-icon>description</mat-icon>
-        </div>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-
-    <mat-panel-description class="description-row">
+  <mat-card class="invoice-card">
+    <mat-card-header>
+      <div mat-card-avatar class="icon-container">
+        <mat-icon>description</mat-icon>
+      </div>
+      <mat-card-title>
+        <span class="invoice-title">Invoice #123456</span>
+        <span class="invoice-date">November 4, 2023</span>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
       <div class="grid-container">
         <div class="grid-item"><span class="bold-text">Full Name:</span> kevinlemus</div>
         <div class="grid-item"><span class="bold-text">Location:</span> Clarksburg, MD</div>
         <div class="grid-item"><span class="bold-text">Service:</span> House Cleaning</div>
       </div>
-    </mat-panel-description>
-
-    <mat-panel-description class="description-row">
       <div class="grid-container">
         <div class="grid-item"><span class="bold-text">Email:</span> kevinlemus@gmail.com</div>
         <div class="grid-item"><span class="bold-text">Phone Number:</span> (301) 938 - 4728</div>
         <div class="grid-item"><span class="bold-text">Total:</span> $320.00</div>
       </div>
-    </mat-panel-description>
-
-    <mat-panel-description class="bottom-row">
       <div class="bottom-text">
         Additional information may be provided in the invoice details.
       </div>
-
-      <mat-card-actions>
-        <button mat-button>DETAILS</button>
-        <button mat-button>PRINT</button>
-      </mat-card-actions>
-    </mat-panel-description>
-  </mat-expansion-panel>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="details-button">DETAILS</button>
+      <button mat-button class="print-button">PRINT</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
