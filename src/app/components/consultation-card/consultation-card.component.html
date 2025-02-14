@@ -1,0 +1,13 @@
+<p>consultation-card works!</p>
+<div class="consultation-card">
+  <mat-icon class="consultation-icon">insert_drive_file</mat-icon>
+  <div class="consultation-details">
+    <h3>{{ consultation.firstName }} {{ consultation.lastName }}</h3>
+    <p><strong>Email:</strong> {{ consultation.email }}</p>
+    <p><strong>Phone:</strong> {{ consultation.phoneNumber }}</p>
+    <p><strong>Preferred Contact:</strong> {{ consultation.preferredContact }}</p>
+    <p><strong>Status:</strong> {{ consultation.status }}</p>
+    <p><strong>Date:</strong> {{ consultation.date | date }}</p>
+    <p><strong>Message:</strong> {{ consultation.message }}</p>
+  </div>
+</div>
