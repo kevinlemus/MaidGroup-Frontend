@@ -1,0 +1,111 @@
+/* Container styling for the panel */
+.panel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Adjusted padding to reduce space between cards */
+  }
+  
+  /* Styling for the consultation card */
+  .consultation-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px; /* Adjusted margin to reduce space between cards */
+  }
+  
+  /* Header styling */
+  mat-card-header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 255, 216);
+    padding: 16px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Icon container styling */
+  .icon-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .icon-container mat-icon {
+    color: black;
+    font-size: 24px; /* Adjusted font size */
+  }
+  
+  /* Summary details styling */
+  .summary-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Title and subtitle styling */
+  .consultation-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .consultation-date {
+    font-size: 14px;
+    color: grey;
+    margin-left: 10px;
+  }
+  
+  /* Content styling */
+  mat-card-content {
+    padding: 16px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .grid-item {
+    min-width: 0;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  /* Bottom text styling */
+  .bottom-text {
+    margin-top: 16px;
+    color: grey;
+  }
+  
+  /* Actions styling */
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+  
+  .details-button,
+  .print-button {
+    background-color: rgb(223, 255, 216);
+    color: black;
+    margin-right: 8px;
+  }
+  
+  .details-button:hover,
+  .print-button:hover {
+    background-color: #a5d6a7;
+  }
+  

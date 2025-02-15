@@ -25,14 +25,22 @@
       </mat-paginator>
     </div>
   </mat-tab>
+
   <mat-tab label="Users">
     <div class="search-bar-container">
       <app-user-search-bar></app-user-search-bar>
     </div>
     <div class="user-container">
-      <div *ngFor="let user of users | slice : (page - 1) * pageSize : page * pageSize" class="user-card">
+      <div
+        *ngFor="let user of users | slice : (page - 1) * pageSize : page * pageSize"
+        class="user-card"
+      >
         <div class="profile-pic-container">
-          <img [src]="user.profilePic || 'assets/default-profile-pic.png'" alt="Profile Picture" class="profile-pic" />
+          <img
+            [src]="user.profilePic || 'assets/default-profile-pic.png'"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
         </div>
         <div class="user-info">
           <h3>{{ user.firstName }} {{ user.lastName }}</h3>
@@ -47,11 +55,31 @@
         [pageSize]="pageSize"
         [pageSizeOptions]="[20, 50, 100]"
         (page)="pageEvent = $event"
-      >
-      </mat-paginator>
+      ></mat-paginator>
     </div>
   </mat-tab>
+
   <mat-tab label="Consultations">
-    <!-- Consultations content here -->
+    <div class="search-bar-container">
+      <app-consultation-search-bar></app-consultation-search-bar>
+    </div>
+    <div class="consultation-container">
+      <div
+        *ngFor="
+          let consultation of consultations
+            | slice : (page - 1) * pageSize : page * pageSize
+        "
+      >
+        <app-consultation [consultation]="consultation"></app-consultation>
+      </div>
+    </div>
+    <div class="paginator-container">
+      <mat-paginator
+        [length]="consultations.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[20, 50, 100]"
+        (page)="pageEvent = $event"
+      ></mat-paginator>
+    </div>
   </mat-tab>
 </mat-tab-group>

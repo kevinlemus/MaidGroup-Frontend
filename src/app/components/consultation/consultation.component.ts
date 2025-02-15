@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Consultation } from 'src/app/model/consultation';
 
 @Component({
   selector: 'app-consultation',
   templateUrl: './consultation.component.html',
   styleUrls: ['./consultation.component.css']
 })
-  export class ConsultationComponent implements OnInit {
+export class ConsultationComponent implements OnInit {
+  @Input()
+  consultation!: Consultation;
 
-  constructor() { }
+  consultationDate: Date;
 
-  ngOnInit(): void {
+  constructor() {
+    this.consultationDate = new Date();
   }
 
+  ngOnInit(): void {
+    // Convert the date string to a JavaScript Date object
+    this.consultationDate = new Date(this.consultation.date);
+  }
 }

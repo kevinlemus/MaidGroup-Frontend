@@ -46,6 +46,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { UserSearchBarComponent } from './components/search-bar/user-search/user-search-bar/user-search-bar.component';
 import { UserCardComponent } from './components/user/user-card/user-card.component';
+import { ConsultationSearchBarComponent } from './components/search-bar/consultation-search-bar/consultation-search-bar.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { UserCardComponent } from './components/user/user-card/user-card.compone
     InvoiceSearchBarComponent,
     UserSearchBarComponent,
     UserCardComponent,
+    ConsultationSearchBarComponent,
   ],
 
   imports: [

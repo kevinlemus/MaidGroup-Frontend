@@ -1,5 +1,4 @@
-import { LocalDate, LocalTime } from 'js-joda';
-
+// consultation.ts (Your model file)
 export interface Consultation {
     id: number;
     firstName: string;
@@ -7,7 +6,21 @@ export interface Consultation {
     email: string;
     phoneNumber: string;
     message: string;
-    date: LocalDate;
-    time: LocalTime;
-}
-
+    date: string; // Use string here, and convert to Date in the component
+    time: string;
+    preferredContact: PreferredContact;
+    status: ConsultationStatus;
+    uniqueLink: string;
+  }
+  
+  export enum PreferredContact {
+    EMAIL = 'EMAIL',
+    PHONE = 'PHONE'
+  }
+  
+  export enum ConsultationStatus {
+    PENDING = 'PENDING',
+    CONFIRMED = 'CONFIRMED',
+    CANCELLED = 'CANCELLED'
+  }
+  
