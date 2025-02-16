@@ -9,6 +9,7 @@ import { InvoiceListComponent } from './components/user/invoice-list/invoice-lis
 import { ConsultationComponent } from './components/consultation/consultation.component';
 import { ConsultationFormComponent } from './components/consultation-form/consultation-form.component';
 import { RegistrationFormComponent } from './components/registration-form/registration-form.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'invoices', component: InvoiceListComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'consultation', component: ConsultationFormComponent },
+  { path: 'contact-us', component: ContactUsComponent },
 ];
 
 @NgModule({
