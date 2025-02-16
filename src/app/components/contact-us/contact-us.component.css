@@ -1,0 +1,102 @@
+/* Container styling for the contact page */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the contact card */
+.contact-card {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  color: rgb(129, 129, 129);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Title and subtitle styling */
+mat-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+mat-card-subtitle {
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+}
+
+/* Form styling */
+.input-container {
+  margin-bottom: 16px;
+}
+
+mat-form-field.full-width {
+  width: 100%;
+}
+
+.custom-placeholder .mat-form-field-flex {
+  background-color: white !important;
+  border: 1px solid black;
+  border-radius: 3px !important;
+}
+
+.custom-placeholder .mat-form-field-label,
+.custom-placeholder .mat-placeholder,
+.custom-placeholder .mat-input-element::placeholder {
+  color: rgb(77, 77, 77) !important;
+}
+
+.custom-placeholder .mat-input-element {
+  caret-color: black !important;
+  max-width: 90% !important;
+}
+
+.custom-placeholder .mat-form-field.mat-focused .mat-form-field-flex {
+  border-color: rgb(149, 189, 255);
+  box-shadow: 0 0 5px rgb(149, 189, 255);
+}
+
+.custom-placeholder .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: transparent !important;
+}
+
+.custom-placeholder .mat-form-field-underline {
+  display: none;
+}
+
+.custom-placeholder .mat-form-field:hover .mat-form-field-underline::before {
+  display: none;
+}
+
+.custom-placeholder
+  .mat-form-field.mat-focused
+  .mat-form-field-underline::after {
+  display: none;
+}
+
+.custom-placeholder .mat-form-field.mat-focused .mat-input-element {
+  color: black !important;
+}
+
+/* Actions styling */
+mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  color: white;
+  background-color: rgb(247, 200, 224);
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover {
+  background-color: #f4a6c8; /* Adjusted hover color */
+}

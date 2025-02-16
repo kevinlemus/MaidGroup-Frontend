@@ -21,7 +21,7 @@
 mat-card-header {
   display: flex;
   align-items: center;
-  background-color: rgb(223, 255, 216);
+  background-color: rgb(247, 200, 224);
   padding: 16px;
   border-radius: 10px 10px 0 0;
 }
@@ -81,7 +81,7 @@ mat-card-content {
 
 .bold-text {
   font-weight: bold;
-  color: #4caf50;
+  color: #f8bcd0; /* Adjusted color */
 }
 
 /* Bottom text styling */
@@ -99,12 +99,12 @@ mat-card-actions {
 
 .details-button,
 .print-button {
-  background-color: rgb(223, 255, 216);
+  background-color: rgb(247, 200, 224);
   color: black;
   margin-right: 8px;
 }
 
 .details-button:hover,
 .print-button:hover {
-  background-color: #a5d6a7;
+  background-color: #f4a6c8; /* Adjusted hover color */
 }

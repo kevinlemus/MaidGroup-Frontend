@@ -17,12 +17,17 @@ mat-card {
 
 .inputs {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 mat-form-field {
   width: 100%;
 }
+
+::ng-deep .mat-checkbox-background {
+  border: 1px solid black;
+}
+
 
 ::ng-deep .mat-form-field-flex {
   background-color: white !important;

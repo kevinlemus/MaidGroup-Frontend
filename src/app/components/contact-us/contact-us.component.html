@@ -1,43 +1,38 @@
-<!-- contact-us.component.html -->
-<div class="container">
-  <mat-card>
-    <mat-card-title style="color: black">
-      Contact Us
-    </mat-card-title>
-    <mat-card-subtitle style="color: rgb(119, 119, 119)">
-      We would love to hear from you!
-    </mat-card-subtitle>
-
+<div class="contact-container">
+  <mat-card class="contact-card">
+    <mat-card-title style="color: black">Contact Us</mat-card-title>
+    <mat-card-subtitle style="color: rgb(119, 119, 119)">We'd love to hear from you.</mat-card-subtitle>
     <mat-divider></mat-divider>
-
-    <div class="all-boxes">
-      <div class="inputs">
-        <mat-form-field class="custom-placeholder" appearance="fill">
-          <mat-label>Your Name</mat-label>
-          <input matInput required>
-        </mat-form-field>
-      </div>
-      <div class="row2-inputs">
-        <mat-form-field class="custom-placeholder" appearance="fill">
-          <mat-label>Your Email</mat-label>
-          <input matInput type="email" required>
-        </mat-form-field>
-        <mat-form-field class="custom-placeholder" appearance="fill">
-          <mat-label>Your Phone Number</mat-label>
-          <input matInput type="tel" mask="(000) 000 - 0000" required>
-          <mat-icon matSuffix>phone</mat-icon>
-        </mat-form-field>
-      </div>
-      <div class="row3-inputs">
-        <mat-form-field class="message-field custom-placeholder" appearance="fill">
-          <mat-label>Your Message</mat-label>
-          <textarea matInput rows="5" required></textarea>
-        </mat-form-field>
-      </div>
-    </div>
-
-    <button mat-raised-button class="submit-button" type="submit">
-      Send Message
-    </button>
+    <mat-card-content>
+      <form>
+        <div class="input-container">
+          <mat-form-field class="full-width custom-placeholder" appearance="fill">
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder="Enter your full name" required>
+          </mat-form-field>
+        </div>
+        <div class="input-container">
+          <mat-form-field class="full-width custom-placeholder" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Enter your email" required>
+          </mat-form-field>
+        </div>
+        <div class="input-container">
+          <mat-form-field class="full-width custom-placeholder" appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="tel" placeholder="Enter your phone number" required>
+          </mat-form-field>
+        </div>
+        <div class="input-container">
+          <mat-form-field class="full-width custom-placeholder" appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Enter your message" rows="5" required></textarea>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button class="submit-button">SUBMIT</button>
+    </mat-card-actions>
   </mat-card>
 </div>
