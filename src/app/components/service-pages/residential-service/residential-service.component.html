@@ -1,0 +1,83 @@
+<!-- residential-service.component.html -->
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-0m1rrVZ6tTf3iWxPFjKk3bBGQyTcVxJdLrGk+MxIEgUWKCxwC8K62ZtZn+UJHlKjZwvOaXTN3HqyJEZ4jH9i1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<div class="residential-service-container">
+  <div class="back-link-container">
+    <a class="back-link" routerLink="/services"> &larr; Back to Services </a>
+  </div>
+
+  <div class="content">
+    <img
+      src="https://via.placeholder.com/800x400"
+      alt="Residential Cleaning"
+      class="service-image"
+    />
+    <div class="description">
+      <h1>Residential Cleaning</h1>
+      <p>
+        Our residential cleaning services provide thorough and reliable cleaning
+        solutions for your home. Whether you need regular maintenance or a
+        one-time deep clean, our experienced team is here to help you maintain a
+        spotless living environment.
+      </p>
+      <ul>
+        <li>General cleaning of all rooms</li>
+        <li>Dusting and polishing surfaces</li>
+        <li>Vacuuming and mopping floors</li>
+        <li>Cleaning kitchens and bathrooms</li>
+        <li>Trash removal</li>
+        <li>And much more!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <mat-card routerLink="/services/commercial-cleaning">
+        <i class="fa-solid fa-city" style="color: #f7c8e0"></i>
+        <mat-card-title> Commercial Cleaning </mat-card-title>
+        <mat-card-subtitle>
+          Expert cleaning solutions for your business.
+        </mat-card-subtitle>
+      </mat-card>
+      <mat-card routerLink="/services/apartment-cleaning">
+        <i class="fa-solid fa-building" style="color: #f7c8e0"></i>
+        <mat-card-title> Apartment Cleaning </mat-card-title>
+        <mat-card-subtitle>
+          Cleaning services tailored for apartments.
+        </mat-card-subtitle>
+      </mat-card>
+      <mat-card routerLink="/services/one-time-cleaning">
+        <i class="fa-regular fa-calendar-check" style="color: #f7c8e0"></i>
+        <mat-card-title> One Time Cleaning </mat-card-title>
+        <mat-card-subtitle>
+          Perfect for special occasions or deep cleans.
+        </mat-card-subtitle>
+      </mat-card>
+    </div>
+    <div class="row">
+      <mat-card routerLink="/services/special-event-cleaning">
+        <i class="fa-solid fa-champagne-glasses" style="color: #f7c8e0"></i>
+        <mat-card-title> Special Event Cleaning </mat-card-title>
+        <mat-card-subtitle>
+          Ensure your event space is spotless.
+        </mat-card-subtitle>
+      </mat-card>
+      <mat-card routerLink="/services/construction-cleaning">
+        <i class="fa-solid fa-hard-hat" style="color: #f7c8e0"></i>
+        <mat-card-title> Construction Cleaning </mat-card-title>
+        <mat-card-subtitle>
+          Post-construction clean-up and debris removal.
+        </mat-card-subtitle>
+      </mat-card>
+    </div>
+  </div>
+</div>

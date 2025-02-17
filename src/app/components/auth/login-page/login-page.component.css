@@ -3,15 +3,14 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(211, 230, 255, 0.151);
-  height: 100vh;
+  min-height: 80vh;
 }
 
 mat-card {
   width: 25em;
   background-color: white;
   color: rgb(129, 129, 129);
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: -15%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

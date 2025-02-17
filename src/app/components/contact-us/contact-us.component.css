@@ -31,7 +31,7 @@ mat-card-subtitle {
 
 /* Form styling */
 .input-container {
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 mat-form-field.full-width {

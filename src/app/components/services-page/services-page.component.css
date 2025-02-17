@@ -1,0 +1,68 @@
+/* services.component.css */
+.services-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-header h1 {
+    font-size: 2.5em;
+    color: rgb(149, 189, 255);
+  }
+  
+  .services-header p {
+    font-size: 1.2em;
+    color: grey;
+  }
+  
+  .services-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Ensuring a gap between the cards */
+    justify-content: center; /* Centering the cards */
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  .service-card {
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(149, 189, 255);
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 10px; /* Adding margin to ensure spacing */
+  }
+  
+  .service-card:hover {
+    background-color: rgb(180, 228, 255);
+    cursor: pointer;
+  }
+  
+  .service-title {
+    font-size: large;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .service-subtitle {
+    font-size: medium;
+    color: white;
+  }
+  
+  .service-icon {
+    margin-bottom: 20px;
+    color: #f7c8e0;
+    font-size: 3em;
+  }
+  

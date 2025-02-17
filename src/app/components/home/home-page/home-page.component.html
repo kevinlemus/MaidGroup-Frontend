@@ -1,7 +1,30 @@
+<!-- home.component.html -->
 <body>
-    <div class="container">
-        <app-zipcode></app-zipcode>
-        <app-info-cards></app-info-cards>
-        <app-login-page></app-login-page>
+  <div class="home-container">
+    <div class="zipcode-section">
+      <mat-card class="home-card">
+        <img src="https://maidgroup-bucket.s3.amazonaws.com/1000_F_255835492_YBdivnm2jnwEANPCyCkzxH3bmNzwgep5.jpg" class="home-image" />
+        <div class="zip-card">
+          <div class="zip-form-content">
+            <mat-card class="zip-form">
+              <mat-card-title class="zip-title">Find Maids In Your Area</mat-card-title>
+              <mat-card-subtitle>Our maids provide services nationwide.</mat-card-subtitle>
+              <div class="input-container">
+                <mat-form-field appearance="fill">
+                  <mat-label>Enter ZIP Code</mat-label>
+                  <input matInput class="zip-input" maxlength="5" type="text" name="zipcode">
+                </mat-form-field>
+                <button mat-raised-button type="submit" class="find-maids">Find Maids</button>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+      </mat-card>
     </div>
+
+    <div class="services-section">
+      <mat-card-title class="title ">Our Services</mat-card-title>
+      <app-info-cards></app-info-cards>
+    </div>
+  </div>
 </body>

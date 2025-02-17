@@ -1,15 +1,43 @@
 <!-- nav-bar.component.html -->
 <div class="navbar-container">
-  <img src="https://maidgroup-bucket.s3.amazonaws.com/MaidGroup-Logo-Final-sin-fondo.png" alt="Maid Group Logo" class="logo">
+  <img
+    src="https://maidgroup-bucket.s3.amazonaws.com/MaidGroup-Logo-Final-sin-fondo.png"
+    alt="Maid Group Logo"
+    class="logo"
+  />
   <div class="nav-links">
     <a routerLinkActive="active" routerLink="/home">Home</a>
     <a routerLinkActive="active" routerLink="/invoices">Invoices</a>
     <div class="dropdown">
-      <a routerLinkActive="active" routerLink="/services" class="services-button">Services</a>
+      <a
+        routerLinkActive="active"
+        routerLink="/services"
+        class="services-button"
+        >Services</a
+      >
       <div class="dropdown-content">
-        <a routerLinkActive="active" routerLink="/services/residential-cleaning">Residential Cleaning</a>
-        <a routerLinkActive="active" routerLink="/services/commercial-cleaning">Commercial Cleaning</a>
-        <a routerLinkActive="active" routerLink="/services/apartment-cleaning">Apartment Cleaning</a>
+        <a routerLinkActive="active" routerLink="/services/residential-cleaning"
+          >Residential Cleaning</a
+        >
+        <a routerLinkActive="active" routerLink="services/commercial-cleaning"
+          >Commercial Cleaning</a
+        >
+        <a routerLinkActive="active" routerLink="/services/apartment-cleaning"
+          >Apartment Cleaning</a
+        >
+        <a routerLinkActive="active" routerLink="services/one-time-cleaning"
+          >One Time Cleaning</a
+        >
+        <a
+          routerLinkActive="active"
+          routerLink="/services/special-event-cleaning"
+          >Special Event Cleaning</a
+        >
+        <a
+          routerLinkActive="active"
+          routerLink="/services/construction-cleaning"
+          >Construction Cleaning</a
+        >
       </div>
     </div>
     <a routerLinkActive="active" routerLink="/about-us">About Us</a>
@@ -17,8 +45,17 @@
     <a routerLinkActive="active" routerLink="/faqs">FAQs</a>
   </div>
   <div class="auth-buttons">
-    <a routerLinkActive="active" routerLink="/consultation" class="consult-button">Request Free Consultation</a>
-    <a routerLinkActive="active" routerLink="/login" class="auth-button">Login</a>
-    <a routerLinkActive="active" routerLink="/register" class="auth-button">Sign up</a>
+    <a
+      routerLinkActive="active"
+      routerLink="/consultation"
+      class="consult-button"
+      >Request Free Consultation</a
+    >
+    <a routerLinkActive="active" routerLink="/login" class="auth-button"
+      >Login</a
+    >
+    <a routerLinkActive="active" routerLink="/register" class="auth-button"
+      >Sign up</a
+    >
   </div>
 </div>

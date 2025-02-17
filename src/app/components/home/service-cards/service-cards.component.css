@@ -1,22 +1,25 @@
+/* service-cards.component.css */
 .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    padding-bottom: 10em;
-    margin-right: 200px;
-    margin-left: 200px;
-}
-
-mat-card:hover {
+    padding-bottom: 5em;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  mat-card:hover {
     background-color: rgb(180, 228, 255);
     cursor: pointer;
-    
-}
-
-mat-card {
+  }
+  
+  mat-card {
     box-shadow: none !important;
     display: flex;
     flex-direction: column;
@@ -25,20 +28,20 @@ mat-card {
     height: 250px;
     width: 250px;
     background-color: rgb(149, 189, 255);
-}
-
-
-.title {
+    margin: 0 10px;
+  }
+  
+  .title {
     font-size: xx-large;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em;
     color: rgb(149, 189, 255);
-
-}
-
-i {
+  }
+  
+  i {
     margin-bottom: 60px;
     transform: scale(4);
-}
+  }
+  
